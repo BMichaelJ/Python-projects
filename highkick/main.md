@@ -2,7 +2,19 @@
 
 > A computer vision application that measures and tracks how high you can kick.
 
-# Origin
+[← Back to Project Collection](../README.md)
+
+## Table of Contents
+- [Origin](#origin)
+- [Overview](#overview)
+- [Features](#features)
+- [Installation](#installation)
+- [Usage](#usage)
+- [How It Works](#how-it-works)
+- [Technical Details](#technical-details)
+- [Project Navigation](#project-navigation)
+
+## Origin
 Github Copilot and Claude 3.7 Sonnet prompted program.
 
 **Original prompt:**
@@ -28,12 +40,11 @@ This application uses your webcam and computer vision to automatically:
 - **Fullscreen Display**: Clean, fullscreen interface for easy viewing during practice
 - **Visual Feedback**: Shows real-time pose tracking and kick height indicator
 
-## How It Works
+## Installation
 
-1. **Body Detection**: MediaPipe Pose tracking identifies your ankle and foot positions
-2. **Baseline Detection**: The app records your normal standing position during initialization
-3. **Height Calculation**: Measures kick height as percentage above your baseline
-4. **History Management**: Records up to 10 kicks before prompting to exit
+```powershell
+pip install opencv-python mediapipe numpy
+```
 
 ## Usage
 
@@ -43,26 +54,14 @@ This application uses your webcam and computer vision to automatically:
 4. **Review**: View your kick heights on screen and try to achieve higher kicks
 5. **Exit**: Press 'q' at any time to quit the application
 
-## Requirements
+## How It Works
 
-- Python 3.10+ recommended
-- OpenCV
-- MediaPipe
-- NumPy
+1. **Body Detection**: MediaPipe Pose tracking identifies your ankle and foot positions
+2. **Baseline Detection**: The app records your normal standing position during initialization
+3. **Height Calculation**: Measures kick height as percentage above your baseline
+4. **History Management**: Records up to 10 kicks before prompting to exit
 
-## Installation
-
-```powershell
-pip install opencv-python mediapipe numpy
-```
-
-## Running the Application
-
-```powershell
-python highkick.py
-```
-
-## Customization
+## Technical Details
 
 The application has several constants that can be adjusted to fit your needs:
 
@@ -128,3 +127,11 @@ MediaPipe is a versatile open-source framework developed by Google for building 
   - Optimized for performance, even on devices with limited resources
 
 It's widely used in applications ranging from augmented reality to fitness tracking and beyond.
+
+---
+
+## Project Navigation
+
+- [← Back to Project Collection](../README.md)
+- [Handstand Timer →](../handstandtimer/main.md)
+- [PicSorter →](../picsorter/main.md)

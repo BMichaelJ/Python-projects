@@ -2,7 +2,19 @@
 
 > An intelligent image organization tool that automatically identifies and sorts images containing people or flags.
 
-# Origin
+[← Back to Project Collection](../README.md)
+
+## Table of Contents
+- [Origin](#origin)
+- [Overview](#overview)
+- [Features](#features)
+- [Installation](#installation)
+- [Usage](#usage)
+- [How It Works](#how-it-works)
+- [Technical Details](#technical-details)
+- [Project Navigation](#project-navigation)
+
+## Origin
 Github Copilot and Claude 3.7 Sonnet prompted program.
 
 **Original prompt:**
@@ -142,3 +154,11 @@ The application uses TensorFlow for deep learning models like MobileNetV2, with 
   - Models designed to work well even on devices with limited resources
 
 These libraries enable the application to efficiently analyze images and identify specific content like people and flags.
+
+---
+
+## Project Navigation
+
+- [← Back to Project Collection](../README.md)
+- [Handstand Timer →](../handstandtimer/main.md)
+- [High Kick Tracker →](../highkick/main.md)

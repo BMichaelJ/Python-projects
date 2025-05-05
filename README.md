@@ -1,3 +1,17 @@
+# Computer Vision Projects Collection
+
+> A collection of Python applications using computer vision and machine learning for fitness tracking and media organization.
+
+## Installation
+
+To use any of these projects, you'll need Python 3.8+ and the following dependencies:
+
+```bash
+pip install opencv-python mediapipe tensorflow
+```
+
+Each project may have specific additional requirements detailed in their documentation.
+
 ## Projects Overview
 
 ### [Handstand Timer](handstandtimer/main.md)
@@ -43,7 +57,44 @@ All projects are built using Python and leverage the following key libraries:
 - **OpenCV (cv2)**: For image processing, video capture, and basic object detection
 - **MediaPipe**: For advanced hand tracking, pose estimation, and face detection
 - **TensorFlow**: For deep learning models (PicSorter specifically)
-- **NumPy**: For efficient numerical operations
+
+## Quick Start
+
+Run any of these projects directly from the command line:
+
+```bash
+# Run the Handstand Timer
+cd handstandtimer
+python handstandtimer.py
+
+# Run the High Kick Tracker
+cd highkick
+python highkick.py
+
+# Run the PicSorter (with example arguments)
+cd picsorter
+python picsorter.py --source /path/to/images --people-dest /path/to/people --flags-dest /path/to/flags
+```
+
+## Screenshots
+
+<details>
+<summary>Handstand Timer</summary>
+
+*Add screenshots of the Handstand Timer application here*
+</details>
+
+<details>
+<summary>High Kick Tracker</summary>
+
+*Add screenshots of the High Kick Tracker application here*
+</details>
+
+<details>
+<summary>PicSorter</summary>
+
+*Add screenshots of the PicSorter application here*
+</details>
 
 ## Origin
 

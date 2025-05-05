@@ -1,8 +1,18 @@
-
-
 # Handstand Timer
 
 > A computer vision application that tracks handstands and times how long you can maintain the position.
+
+[← Back to Project Collection](../README.md)
+
+## Table of Contents
+- [Origin](#origin)
+- [Overview](#overview)
+- [Features](#features)
+- [Installation](#installation)
+- [Usage](#usage)
+- [How It Works](#how-it-works)
+- [Technical Details](#technical-details)
+- [Project Navigation](#project-navigation)
 
 ## Origin
 Github Copilot and Claude 3.7 Sonnet prompted program.
@@ -35,12 +45,11 @@ This application uses your webcam and computer vision to automatically:
 - **Fullscreen Display**: Clean, fullscreen interface for easy viewing during exercise
 - **Visual Feedback**: Shows real-time hand tracking with landmarks and connections
 
-## How It Works
+## Installation
 
-1. **Hand Detection**: MediaPipe's hand tracking identifies the position of your wrists and fingers
-2. **Position Analysis**: The app checks if the wrist is above the fingertips and if fingertips are near the bottom of the frame
-3. **Timing Logic**: Timing starts after a brief stabilization period and stops when hands leave the ground
-4. **History Management**: Records up to 10 attempts before prompting to exit
+```bash
+pip install opencv-python mediapipe numpy
+```
 
 ## Usage
 
@@ -50,26 +59,14 @@ This application uses your webcam and computer vision to automatically:
 4. **Review**: View your times on screen and try to beat your best time
 5. **Exit**: Press 'q' at any time to quit the application
 
-## Requirements
+## How It Works
 
-- Python 3.10+ recommended
-- OpenCV
-- MediaPipe
-- NumPy
+1. **Hand Detection**: MediaPipe's hand tracking identifies the position of your wrists and fingers
+2. **Position Analysis**: The app checks if the wrist is above the fingertips and if fingertips are near the bottom of the frame
+3. **Timing Logic**: Timing starts after a brief stabilization period and stops when hands leave the ground
+4. **History Management**: Records up to 10 attempts before prompting to exit
 
-## Installation
-
-```bash
-pip install opencv-python mediapipe numpy
-```
-
-## Running the Application
-
-```bash
-python handstandtimer.py
-```
-
-## Customization
+## Technical Details
 
 The application has several constants that can be adjusted to fit your needs:
 
@@ -140,3 +137,11 @@ MediaPipe is a versatile open-source framework developed by Google for building 
   - Optimized for performance, even on devices with limited resources
 
 It's widely used in applications ranging from augmented reality to fitness tracking and beyond.
+
+---
+
+## Project Navigation
+
+- [← Back to Project Collection](../README.md)
+- [High Kick Tracker →](../highkick/main.md)
+- [PicSorter →](../picsorter/main.md)
