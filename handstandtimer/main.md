@@ -11,6 +11,12 @@ Idea came from timing my daughters handstands and wanted to "gamify" the trainin
 **Original Prompt:**
 > I am writing a python program that will take time how long one can stand on their hands. The idea is to use camera to detect when both hands touch the floor and start timer until both hands release the floor. Can you help me write this code?
 
+***follow up Prompts:***
+> cool, the program works, now I want ti to list tries up to 10 times and then prompt to shutdown app. The list should be on the right side with time and the best time should be in green
+
+> great, I need the video recording screen to be fullscreen and the background for the attempt list to be black
+
+
 ## Overview
 
 This application uses your webcam and computer vision to automatically:

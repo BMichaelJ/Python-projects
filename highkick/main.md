@@ -2,6 +2,13 @@
 
 > A computer vision application that measures and tracks how high you can kick.
 
+# Origin
+Github Copilot and Claude 3.7 Sonnet prompted program.
+
+**Original prompt:**
+I want to measure how high I can kick, the progam should recognize my feet and track when it is in the air and make a note of the highest point, make a list of 10 highest kicks and stop after 10
+
+
 ## Overview
 
 This application uses your webcam and computer vision to automatically:

@@ -2,6 +2,15 @@
 
 > An intelligent image organization tool that automatically identifies and sorts images containing people or flags.
 
+# Origin
+Github Copilot and Claude 3.7 Sonnet prompted program.
+
+**Original prompt:**
+I want a script that moves any pictures that has people or flags in them to a new folder
+***follow up Prompts:***
+> I also want a logfile that includes the information on the weight and keywords
+
+
 ## Overview
 
 This application uses computer vision and machine learning to:
@@ -65,6 +74,8 @@ python picsorter.py C:\path\to\your\photos --dest C:\path\to\destination
 ```powershell
 pip install tensorflow opencv-python numpy pillow
 ```
+### Note
+The first time you run the script, it will download the MobileNetV2 model weights, which may take a moment depending on your internet connection.
 
 ## Log File Output
 
